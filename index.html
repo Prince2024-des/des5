@@ -4,21 +4,34 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Portfolio</title>
-    <link rel="stylesheet" href="./index.css">
+    <link rel="stylesheet" href="./style.css">
 </head>
 <body>
     <section id="navbar">
         <div class="container">
             <div class="list">
                  <img src="./images/Group (4).png" alt="" class="my">
-                 <ul>
+                 <ul class="sidebar">
+                    <li onclick=hideSidebar()><a href=""><svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 -960 960 960" width="26" fill="#5f6368"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
                     <li><a href=""><span>Home</span></a></li>
                     <li><a href="">Features</a></li>
                     <li><a href="">How It works</a></li>
                     <li><a href="">About us</a></li>
                     <li><a href="">Blog</a></li>
+                    <button><a href="">Get the App</a></button>
                   </ul> 
-                <button><a href="">Get the App</a></button>
+                <!-- <button><a href="">Get the App</a></button> -->
+
+                 <ul>
+                    <li class="hideonmobile"><a href=""><span>Home</span></a></li>
+                    <li class="hideonmobile"><a href="">Features</a></li>
+                    <li class="hideonmobile"><a href="">How It works</a></li>
+                    <li class="hideonmobile"><a href="">About us</a></li>
+                    <li class="hideonmobile"><a href="">Blog</a></li>
+                    <li class="menu-button" onclick=showSidebar()><a href=""><svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 -960 960 960" width="26" fill="#5f6368"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
+                    <button><a href="">Get the App</a></button>
+                  </ul> 
+                <!-- <button><a href="">Get the App</a></button> -->
 
             </div>
 
@@ -100,11 +113,9 @@
                     </div>
 
                 </div> 
-            
-
-        
-
+    
 
       </section>
+      <script src="./script.js"></script>
 </body>
 </html>
